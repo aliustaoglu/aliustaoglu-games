@@ -9,9 +9,9 @@
       <b-navbar-item tag="router-link" to="/">
         Home
       </b-navbar-item>
-      <b-navbar-item tag="router-link" to="/tools">
+      <!-- <b-navbar-item tag="router-link" to="/tools">
         Tools
-      </b-navbar-item>
+      </b-navbar-item> -->
       <b-navbar-dropdown class="dropdown" label="Games">
         <b-navbar-item tag="router-link" to="/quizzz-nite">
           Quizzz Nite
