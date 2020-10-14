@@ -13,7 +13,7 @@
         Tools
       </b-navbar-item>
       <b-navbar-dropdown class="dropdown" label="Games">
-        <b-navbar-item tag="router-link" to="/quizz-nite">
+        <b-navbar-item tag="router-link" to="/quizzz-nite">
           Quizzz Nite
         </b-navbar-item>
       </b-navbar-dropdown>
@@ -21,14 +21,14 @@
 
     <template slot="end">
       <b-navbar-item tag="div">
-        <div class="buttons">
+        <!-- <div class="buttons">
           <a class="button is-primary">
             <strong>Sign up</strong>
           </a>
           <a class="button is-light">
             Log in
           </a>
-        </div>
+        </div> -->
       </b-navbar-item>
     </template>
   </b-navbar>
@@ -43,7 +43,7 @@ export default class Navbar extends Vue {}
 
 <style scoped lang="scss">
 .navbar {
-  background: -webkit-linear-gradient(#2981db, #044990);
+  background: $background-colour;
 }
 .brand-logo {
   font-family: 'Games';
@@ -51,8 +51,5 @@ export default class Navbar extends Vue {}
   background: -webkit-linear-gradient(#ffff00, #ff8000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.dropdown {
-  color: red !important;
 }
 </style>
