@@ -1,17 +1,21 @@
 <template>
   <div class="privacy">
-    <div v-if="game === 'quizzz'">
+    <div v-if="game === 'quizzz' || game === 'piano'">
       <nav class="breadcrumb">
-        <ul>
+        <ul v-if="game === 'quizzz'">
           <li><router-link to="/quizzz-nite">Quizzz Nite</router-link></li>
           <li><router-link to="/quizzz-nite/privacy">Privacy Policy</router-link></li>
+        </ul>
+        <ul v-if="game === 'piano'">
+          <li><router-link to="/piano-shooter">Piano Shooter</router-link></li>
+          <li><router-link to="/piano/privacy">Privacy Policy</router-link></li>
         </ul>
       </nav>
       <div>
         <h2>Private Data</h2>
         <p>
-          Your privacy is important to us. It is Aliustaoglu Games' policy to respect your privacy regarding any information we may collect from
-          you across our website, http://games.aliustaoglu.biz, and other sites we own and operate.
+          Your privacy is important to us. It is Aliustaoglu Games' policy to respect your privacy regarding any information we may collect
+          from you across our website, http://games.aliustaoglu.biz, and other sites we own and operate.
         </p>
         <p>
           We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means,

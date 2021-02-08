@@ -16,6 +16,9 @@
         <b-navbar-item tag="router-link" to="/quizzz-nite">
           Quizzz Nite
         </b-navbar-item>
+        <b-navbar-item tag="router-link" to="/piano-shooter">
+          Piano Shooter
+        </b-navbar-item>
       </b-navbar-dropdown>
     </template>
 

@@ -30,6 +30,15 @@ export default class Contact extends Vue {
   subject = 'Quizzz Nite';
   message = '';
 
+  mounted() {
+    if (this.$route.name === 'piano-contact') {
+      this.subject = 'Piano Shooter';
+    }
+    if (this.$route.name === 'quizzz-nite-contact') {
+      this.subject = 'Quizzz Nite';
+    }
+  }
+
   get enabled() {
     const e = this.name.length * this.email.length * this.message.length;
     console.log(e);
