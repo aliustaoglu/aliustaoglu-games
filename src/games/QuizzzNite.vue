@@ -29,7 +29,11 @@
               </div>
               <div>It's a free app and it does not contain any ads. Download it now:</div>
               <div class="store-images">
-                <img style="height: 58px" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" />
+                <img
+                  @click="clickAndroid"
+                  style="height: 58px; cursor: pointer;"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                />
                 <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" />
               </div>
             </h2>
@@ -48,7 +52,11 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class QuizzzNite extends Vue {}
+export default class QuizzzNite extends Vue {
+  clickAndroid() {
+    window.open('https://play.google.com/store/apps/details?id=biz.aliustaoglu.games.quizzznite', '_blank');
+  }
+}
 </script>
 
 <style scoped lang="scss">
