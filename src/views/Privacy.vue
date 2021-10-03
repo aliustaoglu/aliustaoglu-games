@@ -1,6 +1,6 @@
 <template>
   <div class="privacy">
-    <div v-if="game === 'quizzz' || game === 'piano'">
+    <div v-if="['quizzz', 'piano', 'jumpilla'].includes(game)">
       <nav class="breadcrumb">
         <ul v-if="game === 'quizzz'">
           <li><router-link to="/quizzz-nite">Quizzz Nite</router-link></li>
@@ -9,6 +9,10 @@
         <ul v-if="game === 'piano'">
           <li><router-link to="/piano-shooter">Piano Shooter</router-link></li>
           <li><router-link to="/piano/privacy">Privacy Policy</router-link></li>
+        </ul>
+        <ul v-if="game === 'jumpilla'">
+          <li><router-link to="/jumpilla">Jumpilla</router-link></li>
+          <li><router-link to="/jumpilla/privacy">Privacy Policy</router-link></li>
         </ul>
       </nav>
       <div>
@@ -55,6 +59,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class Privacy extends Vue {
   @Prop() game!: string;
+
 }
 </script>
 

@@ -31,11 +31,16 @@ export default class Contact extends Vue {
   message = '';
 
   mounted() {
-    if (this.$route.name === 'piano-contact') {
-      this.subject = 'Piano Shooter';
-    }
-    if (this.$route.name === 'quizzz-nite-contact') {
-      this.subject = 'Quizzz Nite';
+    switch (this.$route.name) {
+      case 'piano-contact':
+        this.subject = 'Piano Shooter';
+        break;
+      case 'quizzz-nite-contact':
+        this.subject = 'Quizzz Nite';
+        break;
+      case 'jumpilla-contact':
+        this.subject = 'Jumpilla';
+        break;
     }
   }
 
