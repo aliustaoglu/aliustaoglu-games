@@ -22,6 +22,9 @@
         <b-navbar-item tag="router-link" to="/jumpilla">
           Jumpilla
         </b-navbar-item>
+        <b-navbar-item tag="router-link" to="/convergists">
+          Convergists
+        </b-navbar-item>
       </b-navbar-dropdown>
     </template>
 

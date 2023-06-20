@@ -41,6 +41,9 @@ export default class Contact extends Vue {
       case 'jumpilla-contact':
         this.subject = 'Jumpilla';
         break;
+      case 'convergists-contact':
+        this.subject = 'Convergists'
+        break;
     }
   }
 

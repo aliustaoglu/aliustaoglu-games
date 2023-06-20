@@ -4,6 +4,7 @@ import Home from '../views/Home.vue';
 import QuizzzNite from '@/games/QuizzzNite.vue';
 import PianoShooter from '@/games/PianoShooter.vue';
 import Jumpilla from '@/games/Jumpilla.vue';
+import Convergists from '@/games/Convergists.vue';
 import Privacy from '@/views/Privacy.vue';
 import Contact from '@/views/Contact.vue';
 
@@ -31,6 +32,11 @@ const routes: Array<RouteConfig> = [
     component: Jumpilla
   },
   {
+    path: '/convergists',
+    name: 'convergists',
+    component: Convergists
+  },
+  {
     path: '/quizzz-nite/privacy',
     name: 'quizzz-nite-privacy',
     component: Privacy,
@@ -49,6 +55,12 @@ const routes: Array<RouteConfig> = [
     props: { game: 'jumpilla' }
   },
   {
+    path: '/convergists/privacy',
+    name: 'convergists-privacy',
+    component: Privacy,
+    props: { game: 'convergists' }
+  },
+  {
     path: '/quizzz-nite/contact',
     name: 'quizzz-nite-contact',
     component: Contact,
@@ -65,6 +77,12 @@ const routes: Array<RouteConfig> = [
     name: 'jumpilla-contact',
     component: Contact,
     props: { game: 'jumpilla' }
+  },
+  {
+    path: '/convergists/contact',
+    name: 'convergists-contact',
+    component: Contact,
+    props: { game: 'convergists' }
   }
 ];
 

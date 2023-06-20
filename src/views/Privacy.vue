@@ -1,6 +1,6 @@
 <template>
   <div class="privacy">
-    <div v-if="['quizzz', 'piano', 'jumpilla'].includes(game)">
+    <div v-if="['quizzz', 'piano', 'jumpilla', 'convergists'].includes(game)">
       <nav class="breadcrumb">
         <ul v-if="game === 'quizzz'">
           <li><router-link to="/quizzz-nite">Quizzz Nite</router-link></li>
@@ -14,11 +14,15 @@
           <li><router-link to="/jumpilla">Jumpilla</router-link></li>
           <li><router-link to="/jumpilla/privacy">Privacy Policy</router-link></li>
         </ul>
+        <ul v-if="game === 'convergists'">
+          <li><router-link to="/convergists">Convergists</router-link></li>
+          <li><router-link to="/convergists/privacy">Privacy Policy</router-link></li>
+        </ul>
       </nav>
       <div>
         <h2>Private Data</h2>
         <p>
-          Your privacy is important to us. It is Aliustaoglu Games' policy to respect your privacy regarding any information we may collect
+          Your privacy is important to us. It is Usta Games' policy to respect your privacy regarding any information we may collect
           from you across our website, http://games.aliustaoglu.biz, and other sites we own and operate.
         </p>
         <p>
